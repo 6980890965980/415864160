@@ -298,3 +298,9 @@ async def api_view(video_id: str):
                 return {"play_count": p["play_count"]}
     raise HTTPException(404, "Video not found")
 
+def start():
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=int(os.getenv("PORT", 8000)))
+
+if __name__ == "__main__":
+    start()
