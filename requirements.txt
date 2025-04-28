@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+requests
+passlib[bcrypt]
+PyJWT
+Jinja2
+python-multipart
